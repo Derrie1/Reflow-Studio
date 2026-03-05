@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SMASH — Burgers & Street Food</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&family=Barlow+Condensed:wght@700;900&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -559,6 +562,41 @@
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
   }
+  @media (max-width: 768px) {
+
+    html, body { overflow-x: hidden; max-width: 100%; }
+    * { max-width: 100%; }
+
+    body { cursor: auto; }
+    .cursor { display: none; }
+
+    nav { padding: 1rem 1.5rem; mix-blend-mode: normal; background: var(--black); }
+    .nav-links { display: none; }
+
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-left { padding: 7rem 1.5rem 3rem; }
+    .hero-title { font-size: clamp(3.5rem, 14vw, 6rem); }
+    .hero-right { min-height: 280px; }
+    .burger-visual { font-size: 7rem; }
+
+    .ticker-item { font-size: 1rem; }
+
+    section { padding: 4rem 1.5rem; }
+
+    .menu-grid { grid-template-columns: 1fr; }
+
+    .about { grid-template-columns: 1fr; padding: 4rem 1.5rem; gap: 2rem; }
+    .about-stats { gap: 1.5rem; flex-wrap: wrap; }
+    .about-visual { min-height: 200px; font-size: 6rem; }
+
+    .locations-grid { grid-template-columns: 1fr; }
+
+    .cta-band { flex-direction: column; padding: 3rem 1.5rem; }
+
+    footer { padding: 2rem 1.5rem; flex-direction: column; gap: 1.5rem; text-align: center; }
+    .footer-links { flex-wrap: wrap; justify-content: center; }
+  }
+
 </style>
 </head>
 <body>
